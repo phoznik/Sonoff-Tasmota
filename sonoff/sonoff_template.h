@@ -61,6 +61,7 @@ enum upins_t {
   GPIO_CNTR2,
   GPIO_CNTR3,
   GPIO_CNTR4,
+  GPIO_I2C_RDY,        // IQS333 touch controller uses a ready pin with I2C communication
   GPIO_SENSOR_END };
 
 // Text in webpage Module Parameters and commands GPIOS and GPIO
@@ -106,7 +107,8 @@ const char sensors[GPIO_SENSOR_END][9] PROGMEM = {
   "Counter1",
   "Counter2",
   "Counter3",
-  "Counter4"
+  "Counter4",
+  "I2C RDY"
   };
   
 // Programmer selectable GPIO functionality offset by user selectable GPIOs
